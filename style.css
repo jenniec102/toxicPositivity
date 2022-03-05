@@ -1,0 +1,84 @@
+/* using Nunito from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+body{
+  background-color: peachpuff;
+  /* mistyrose; */
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  /* gap: 5vw; */
+  /* padding: 5vh; */
+  margin: 0 5vh 8vh 5vh;
+}
+
+.main h1{
+  font-size: 3em;
+  padding-bottom: 0;
+}
+
+.main h2{
+  padding: 0;
+}
+
+.mainText h3{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.mainText img{
+  max-height: 40vh;
+}
+
+
+/* .mainMenu h2{
+  text-align: center;
+  background-color: silver;
+  padding: 5vw;
+  height: 25vh;
+  width: 25vh;
+  border-radius: 20vw;
+}
+
+.mmButton:nth-of-type(3) h2{
+  justify-content: center;
+  height: 30vh;
+  width: 30vh;
+  background-color: lightyellow;
+} */
+
+.nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5vh;
+  background-color: lightyellow;
+  margin-bottom: 5vh;
+}
+.nav li{
+  list-style: none;
+}
+
+.nav a{
+  display: flex;
+  text-decoration: none;
+  color: black;
+  padding: 2vh;
+}
+
+.nav a:hover{
+  background-color: lightgray;
+  color: lightyellow;
+}
