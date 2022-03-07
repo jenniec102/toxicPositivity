@@ -71,6 +71,13 @@ body{
   /* #E9E095; */
   /* #ECE4A4; */
   /* #F3C49D; */
+  background-image: url(https://assets-api.kathmandupost.com/thumb.php?src=https://assets-cdn.kathmandupost.com/uploads/source/news/2021/opinion/shutterstock1917137108-1636020626.jpg&w=900&height=601);
+  /* background-image: url(https://media2.giphy.com/media/L2kROBoUl1D3xz37sY/giphy.gif?cid=790b7611cc12bacdf24151d3e40431f48ee0efbd12508c00&rid=giphy.gif&ct=g); */
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  /* background-repeat: repeat-x; */
+  background-position: right;
+  /* background-size: contain; */
 }
 
 #effects{
@@ -82,7 +89,8 @@ body{
 
 #examples{
   /* gray blue */
-  background-color: #8294AE;
+  background-color: #9CB4D7;
+  /* #8294AE; */
   /* light blue */
   /* #C1D0E6; */
 }
@@ -131,12 +139,16 @@ body{
 
 .mainBlock h3{
   padding: 5vmin;
+  background-color: #E6DB86;
   /* background-color: silver; */
   border-style: solid;
   border-color: gray;
   border-radius: 10vmin;
   text-align: center;
   max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mainBlock img{
@@ -173,7 +185,8 @@ body{
   background-position: center;
   background-attachment: fixed;
   height: 90vmin;
-  width: 100vw;
+  /* width: 100vmin; */
+  width: 100%;
 
 }
 
@@ -188,7 +201,7 @@ body{
   /* width: 100vw; */
 }
 
-.content, .bContent{
+.content, .bContent, .eContent{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -196,9 +209,9 @@ body{
   margin: 0 0 15vmin 0;
 }
 
-.content .allText{
-  margin-left: 35vmin;
-  margin-right: 25vmin;
+.allText{
+  padding-left: 35vmin;
+  padding-right: 25vmin;
 }
 
 .content .picture{
@@ -211,18 +224,92 @@ body{
   border-radius: 20vmin;
 }
 
-/* .mainMenu h2{
-  text-align: center;
-  background-color: silver;
-  padding: 5vw;
-  height: 25vh;
-  width: 25vh;
-  border-radius: 20vw;
+.bContent .row, .content .row{
+  display: flex;
+  flex-direction: row;
+  gap: 10vmin;
 }
 
-.mmButton:nth-of-type(3) h2{
+.bContent img{
+  max-height: 50vmin;
+  border-radius: 20vmin;
+}
+
+.content .row img{
+  max-width: 80vmin;
+  border-radius: 20vmin;
+}
+
+.sourceBlock a{
+  text-decoration: none;
+  color: gray;
+}
+
+.sourceBlock a:hover{
+  background-color: silver;
+}
+
+.eContent a{
+  color: navy;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  background-color: darkgray;
+  color: #E6DB86;
+}
+
+.eContent .row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.eContent .rowTitle{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  height: 30vh;
-  width: 30vh;
-  background-color: lightyellow;
-} */
+  gap: 50vmin;
+}
+
+.eContent .row p{
+  /* background-color: silver; */
+  border-radius: 15vmin;
+  padding: 5vmin;
+  width: 100%;
+}
+
+.dos, .donts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vmin;
+}
+
+.donts p{
+  background-color: silver;
+}
+
+.dos p{
+  background-color: lightgray;
+}
+
+.eContent img{
+  max-height: 50vmin;
+  /* max-width: 50vmin; */
+}
+
+.eContent .picture{
+  display: flex;
+  justify-content: center;
+}
+
+img{
+  border-radius: 20vmin;
+}
