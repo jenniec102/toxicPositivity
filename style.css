@@ -19,14 +19,6 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* #B5C7E1; */
-  /* #F0E9B4; */
-  /* rgb(255, 204, 204); /* light pink */
-  /* lightyellow;  */
-  /* rgb(255, 218, 115); */
-  /* rgb(255, 208, 79);  */
-  /* peachpuff; */
-  /* mistyrose; */
 }
 
 .nav ul{
@@ -73,10 +65,8 @@ body{
   /* #ECE4A4; */
   /* #F3C49D; */
   background-image: url(https://assets-api.kathmandupost.com/thumb.php?src=https://assets-cdn.kathmandupost.com/uploads/source/news/2021/opinion/shutterstock1917137108-1636020626.jpg&w=900&height=601);
-  /* background-image: url(https://media2.giphy.com/media/L2kROBoUl1D3xz37sY/giphy.gif?cid=790b7611cc12bacdf24151d3e40431f48ee0efbd12508c00&rid=giphy.gif&ct=g); */
   background-attachment: fixed;
   background-repeat: repeat-y;
-  /* background-repeat: repeat-x; */
   background-position: right;
   background-size: contain;
 }
@@ -120,13 +110,11 @@ body{
 .main{
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   /* gap: 5vw; */
   /* padding: 5vh; */
   margin: 0 5vh 8vh 5vh;
-  /* background-color: #B5C7E1; */
 }
 
 .main h1{
