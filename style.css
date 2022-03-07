@@ -1,15 +1,102 @@
 /* using Nunito from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
 
 *{
   padding: 0;
   margin: 0;
   font-family: 'Nunito', sans-serif;
+  line-height: 2em;
+}
+
+.difFont *{
+  font-family: 'Chelsea Market', cursive;
 }
 
 body{
-  background-color: peachpuff;
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* #B5C7E1; */
+  /* #F0E9B4; */
+  /* rgb(255, 204, 204); /* light pink */ */
+  /* lightyellow;  */
+  /* rgb(255, 218, 115); */
+  /* rgb(255, 208, 79);  */
+  /* peachpuff; */
   /* mistyrose; */
+}
+
+.nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5vh;
+  background-color: #BABABA;
+  /* #DDDDDD; */
+  /* #CBCBCB; */
+  /* #F0E9B4;  */
+  /* rgb(131, 161, 205); muted dark blue */
+  /* rgb(76, 91, 100); dark blue  */
+  /* rgb(180, 253, 253); /* light blue */
+  /* rgb(255, 204, 153); /* light orange */
+  margin-bottom: 5vh;
+  /* width: 100vw;  */
+  width: 80vw;
+}
+
+.nav li{
+  list-style: none;
+}
+
+.nav a{
+  display: flex;
+  text-decoration: none;
+  color: black;
+  padding: 2vh;
+}
+
+.nav a:hover{
+  background-color: lightgray;
+  color: rgb(255, 255, 179);
+  /* lightyellow; */
+}
+
+#home{
+  /* muted yellow */
+  background-color: #E6DB86;
+  /* #E9E095; */
+  /* #ECE4A4; */
+  /* #F3C49D; */
+}
+
+#effects{
+  /* orange gray  */
+  background-color: #EFB07D;
+  /* muted orange */
+  /* #F3C49D; */
+}
+
+#examples{
+  /* gray blue */
+  background-color: #8294AE;
+  /* light blue */
+  /* #C1D0E6; */
+}
+
+#benefits{
+
+  background-color: #D99B82;
+  /* #F3C49D; */
+  /* #F4BEA8; */
+}
+
+#sources{
+  /* darker muted yellow */
+  background-color: #E0CB85;
 }
 
 .main{
@@ -21,6 +108,7 @@ body{
   /* gap: 5vw; */
   /* padding: 5vh; */
   margin: 0 5vh 8vh 5vh;
+  /* background-color: #B5C7E1; */
 }
 
 .main h1{
@@ -32,16 +120,96 @@ body{
   padding: 0;
 }
 
-.mainText h3{
+.mainBlock{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 5vmin;
+  justify-content: center;
+  margin: 5vmin 10vmin;
 }
 
-.mainText img{
+.mainBlock h3{
+  padding: 5vmin;
+  /* background-color: silver; */
+  border-style: solid;
+  border-color: gray;
+  border-radius: 10vmin;
+  text-align: center;
+  max-width: 50%;
+}
+
+.mainBlock img{
   max-height: 40vh;
+  max-width: 50%;
 }
 
+.mainBlock .row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mainContent{
+  display: flex;
+  justify-content: center;
+}
+
+.mainContent p{
+  background-color: lightgray;
+  padding: 6vmin;
+  border-radius: 5vmin;
+  max-width: 70%;
+  text-indent: 2em;
+}
+
+#noMargin{
+  margin-bottom: 0;
+}
+
+.header{
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 90vmin;
+  width: 100vw;
+
+}
+
+.content .header{
+  background-image: url(https://cache.mrporter.com/content/images/cms/ycm/resource/blob/1964922/7417f5d7d0a22a9368eec35d97d65362/opener-jpg-data.jpg/w1500_q80.jpg);
+  background-position: left;
+}
+
+.bContent .header{
+  background-image: url(https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2021/08/p-1-s-no-one-right-path-to-work-life-balancebut-there-are-plenty-of-wrong.jpg);
+  height: 90vmin;
+  /* width: 100vw; */
+}
+
+.content, .bContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 15vmin 0;
+}
+
+.content .allText{
+  margin-left: 35vmin;
+  margin-right: 25vmin;
+}
+
+.content .picture{
+  justify-content: center;
+}
+
+.content .picture img{
+  max-width: 40%;
+  max-height: 30%;
+  border-radius: 20vmin;
+}
 
 /* .mainMenu h2{
   text-align: center;
@@ -58,27 +226,3 @@ body{
   width: 30vh;
   background-color: lightyellow;
 } */
-
-.nav ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 5vh;
-  background-color: lightyellow;
-  margin-bottom: 5vh;
-}
-.nav li{
-  list-style: none;
-}
-
-.nav a{
-  display: flex;
-  text-decoration: none;
-  color: black;
-  padding: 2vh;
-}
-
-.nav a:hover{
-  background-color: lightgray;
-  color: lightyellow;
-}
