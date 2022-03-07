@@ -21,7 +21,7 @@ body{
   flex-direction: column;
   /* #B5C7E1; */
   /* #F0E9B4; */
-  /* rgb(255, 204, 204); /* light pink */ */
+  /* rgb(255, 204, 204); /* light pink */
   /* lightyellow;  */
   /* rgb(255, 218, 115); */
   /* rgb(255, 208, 79);  */
@@ -44,7 +44,6 @@ body{
   /* rgb(180, 253, 253); /* light blue */
   /* rgb(255, 204, 153); /* light orange */
   margin-bottom: 5vh;
-  /* width: 100vw;  */
   width: 80vw;
 }
 
@@ -67,7 +66,9 @@ body{
 
 #home{
   /* muted yellow */
-  background-color: #E6DB86;
+  background-color:
+  /* #e0d687; */
+  #E6DB86;
   /* #E9E095; */
   /* #ECE4A4; */
   /* #F3C49D; */
@@ -77,26 +78,34 @@ body{
   background-repeat: repeat-y;
   /* background-repeat: repeat-x; */
   background-position: right;
-  /* background-size: contain; */
+  background-size: contain;
 }
 
 #effects{
-  /* orange gray  */
-  background-color: #EFB07D;
+  /* muted orange  */
+  background-color:
+  /* #e8ba92; */
+  /* #deb18a; */
+  /* #E2C1A5;  */
+  #e6ae81;
+  /* #EFB07D; */
   /* muted orange */
   /* #F3C49D; */
 }
 
 #examples{
   /* gray blue */
-  background-color: #9CB4D7;
+  background-color:
+  /* #98b1d4; */
+  /* #8fa6c7; */
+  #9CB4D7;
   /* #8294AE; */
   /* light blue */
   /* #C1D0E6; */
 }
 
 #benefits{
-
+  /* muted coral */
   background-color: #D99B82;
   /* #F3C49D; */
   /* #F4BEA8; */
@@ -105,6 +114,7 @@ body{
 #sources{
   /* darker muted yellow */
   background-color: #E0CB85;
+  margin: 0 15vmin 0 15vmin;
 }
 
 .main{
@@ -122,6 +132,7 @@ body{
 .main h1{
   font-size: 3em;
   padding-bottom: 0;
+  text-shadow: 0.5vmin 0 0 lightgray;
 }
 
 .main h2{
@@ -185,20 +196,29 @@ body{
   background-position: center;
   background-attachment: fixed;
   height: 90vmin;
-  /* width: 100vmin; */
   width: 100%;
-
 }
 
 .content .header{
   background-image: url(https://cache.mrporter.com/content/images/cms/ycm/resource/blob/1964922/7417f5d7d0a22a9368eec35d97d65362/opener-jpg-data.jpg/w1500_q80.jpg);
   background-position: left;
+  filter: grayscale(20%);
+}
+
+.content .pic{
+  display: flex;
+  justify-content: center;
+
+}
+
+.content .pic img{
+  max-width: 100vmin;
+  max-height: 100vmin;
 }
 
 .bContent .header{
   background-image: url(https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2021/08/p-1-s-no-one-right-path-to-work-life-balancebut-there-are-plenty-of-wrong.jpg);
   height: 90vmin;
-  /* width: 100vw; */
 }
 
 .content, .bContent, .eContent{
@@ -214,20 +234,30 @@ body{
   padding-right: 25vmin;
 }
 
+.bContent .row, .content .row, #sources .row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5vmin;
+}
+
+.row .pic{
+  max-width: 46%
+}
+
+.row .text{
+  max-width: 46%;
+}
+
 .content .picture{
   justify-content: center;
 }
 
 .content .picture img{
-  max-width: 40%;
+  max-width: 30%;
   max-height: 30%;
   border-radius: 20vmin;
-}
-
-.bContent .row, .content .row{
-  display: flex;
-  flex-direction: row;
-  gap: 10vmin;
 }
 
 .bContent img{
@@ -236,7 +266,7 @@ body{
 }
 
 .content .row img{
-  max-width: 80vmin;
+  max-width: 105%;
   border-radius: 20vmin;
 }
 
@@ -263,11 +293,14 @@ a:hover{
   color: #E6DB86;
 }
 
+.eContent .picture{
+  filter: brightness(0.95);
+}
+
 .eContent .row{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
 .eContent .rowTitle{
@@ -312,4 +345,24 @@ a:hover{
 
 img{
   border-radius: 20vmin;
+}
+
+/* style all a tags after another a tag */
+a + a{
+  margin-top: 1em;
+}
+
+#sources img{
+  max-height: 30vmin;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  /* gap: 5em;  */
+}
+
+.pic iframe{
+  width: 100%;
+  height: 50vmin;
 }
