@@ -28,13 +28,6 @@ body{
   flex-wrap: wrap;
   gap: 5vh;
   background-color: #BABABA;
-  /* #DDDDDD; */
-  /* #CBCBCB; */
-  /* #F0E9B4;  */
-  /* rgb(131, 161, 205); muted dark blue */
-  /* rgb(76, 91, 100); dark blue  */
-  /* rgb(180, 253, 253); /* light blue */
-  /* rgb(255, 204, 153); /* light orange */
   margin-bottom: 5vh;
   width: 80vw;
 }
@@ -52,53 +45,32 @@ body{
 
 .nav a:hover{
   background-color: lightgray;
-  color: rgb(255, 255, 179);
-  /* lightyellow; */
+  color: rgb(255, 255, 179); /* lightyellow; */
 }
 
 #home{
   /* muted yellow */
-  background-color:
-  /* #e0d687; */
-  #E6DB86;
-  /* #E9E095; */
-  /* #ECE4A4; */
-  /* #F3C49D; */
+  background-color: #E6DB86;
   background-image: url(https://assets-api.kathmandupost.com/thumb.php?src=https://assets-cdn.kathmandupost.com/uploads/source/news/2021/opinion/shutterstock1917137108-1636020626.jpg&w=900&height=601);
   background-attachment: fixed;
   background-repeat: repeat-y;
-  background-position: right;
+  background-position: 28vw;
   background-size: contain;
 }
 
 #effects{
   /* muted orange  */
-  background-color:
-  /* #e8ba92; */
-  /* #deb18a; */
-  /* #E2C1A5;  */
-  #e6ae81;
-  /* #EFB07D; */
-  /* muted orange */
-  /* #F3C49D; */
+  background-color: #e6ae81;
 }
 
 #examples{
   /* gray blue */
-  background-color:
-  /* #98b1d4; */
-  /* #8fa6c7; */
-  #9CB4D7;
-  /* #8294AE; */
-  /* light blue */
-  /* #C1D0E6; */
+  background-color: #9CB4D7;
 }
 
 #benefits{
   /* muted coral */
   background-color: #D99B82;
-  /* #F3C49D; */
-  /* #F4BEA8; */
 }
 
 #sources{
@@ -112,13 +84,11 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* gap: 5vw; */
-  /* padding: 5vh; */
-  margin: 0 5vh 8vh 5vh;
+  margin: 3vh 5vh 8vh 5vh;
 }
 
 .main h1{
-  font-size: 3em;
+  font-size: 3.5em;
   padding-bottom: 0;
   text-shadow: 0.5vmin 0 0 lightgray;
 }
@@ -139,10 +109,10 @@ body{
 .mainBlock h3{
   padding: 5vmin;
   background-color: #E6DB86;
-  /* background-color: silver; */
   border-style: solid;
   border-color: gray;
   border-radius: 10vmin;
+  border-width: thin;
   text-align: center;
   max-width: 50%;
   display: flex;
@@ -299,7 +269,6 @@ a:hover{
 }
 
 .eContent .row p{
-  /* background-color: silver; */
   border-radius: 15vmin;
   padding: 5vmin;
   width: 100%;
@@ -323,7 +292,6 @@ a:hover{
 
 .eContent img{
   max-height: 50vmin;
-  /* max-width: 50vmin; */
 }
 
 .eContent .picture{
@@ -347,7 +315,6 @@ a + a{
 .text{
   display: flex;
   flex-direction: column;
-  /* gap: 5em;  */
 }
 
 .pic iframe{
